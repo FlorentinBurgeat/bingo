@@ -1,60 +1,108 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <h1 class="title">Bingo Imago Generator</h1>
+
+    <div class="field is-horizontal player-selection">
+      <div class="field-label">
+        <label for="select-joueur" class="label">Sélectionne toi</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <div class="select">
+              <select id="select-joueur" v-model="selectedPlayer">
+                <option v-for="player in players" :key="player">{{player}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <table class="table is-bordered">
+      <thead></thead>
+      <tr>
+        <th colspan="5">
+          <h2 class="title has-text-centered">BINGO</h2>
+          <h2 class="title has-text-centered">IMAGO</h2>
+        </th>
+      </tr>
+      <tbody>
+        <tr v-for="row in 5" :key="'row' + row">
+          <td v-for="column in 5" :key="'column' + column">
+            <span v-if="row != 3 || column != 3">
+              {{bingoEvents[column - 1 + (row - 1) * 5]}}
+            </span>
+            <i v-else>
+              <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" style="background-color: transparent;" xml:space="preserve" version="1.1" id="svg2"><metadata id="metadata8"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata><defs id="defs6"><clipPath id="clipPath16" clipPathUnits="userSpaceOnUse"><path id="path18" d="M 0,36 36,36 36,0 0,0 0,36 Z"/></clipPath><clipPath id="clipPath28" clipPathUnits="userSpaceOnUse"><path id="path30" d="M 6.341,29.165 C 0.636,23.46 0.952,15.224 3.444,9.005 l 0,0 C 3.608,8.594 4.527,8.311 4.71,7.921 l 0,0 C 6.207,4.7 9.346,1.219 11.57,0.589 l 0,0 c 2.22,-0.629 2.196,0.528 1.6,2.322 l 0,0 C 12.487,4.966 11.054,7.857 11.398,9.85 l 0,0 c 0.113,0.66 0.684,0.475 0.73,1.283 l 0,0 c 0.415,7.285 3.652,13.34 12.81,14.256 l 0,0 c 0.925,0.093 2.797,0.194 3.565,0.304 l 0,0 c 0.493,0.07 1.107,0.914 1.543,0.962 l 0,0 c 1.158,0.129 2.616,-0.086 3.816,-0.428 l 0,0 c 2.563,-0.733 0.157,5.701 -5.76,6.817 l 0,0 c -0.449,0.084 -0.836,1.051 -1.286,1.198 l 0,0 c -1.991,0.651 -4.135,1.023 -6.338,1.023 l 0,0 c -4.742,0 -9.76,-1.724 -14.137,-6.1"/></clipPath><clipPath id="clipPath48" clipPathUnits="userSpaceOnUse"><path id="path50" d="M 0,36 36,36 36,0 0,0 0,36 Z"/></clipPath></defs><g transform="matrix(1.25,0,0,-1.25,0,45)" id="g10"><g id="g12"><g clip-path="url(#clipPath16)" id="g14"><g transform="translate(11.5693,0.5898)" id="g20"><path id="path22" style="fill:#f4900c;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -2.223,0.63 -5.362,4.11 -6.86,7.331 -0.182,0.391 -1.101,0.673 -1.265,1.084 -2.492,6.22 -2.808,14.455 2.897,20.161 6.41,6.409 14.196,7.129 20.475,5.076 0.45,-0.147 0.837,-1.113 1.286,-1.198 5.917,-1.115 8.322,-7.549 5.759,-6.817 -1.199,0.343 -2.657,0.557 -3.814,0.428 -0.437,-0.048 -1.051,-0.891 -1.544,-0.961 -0.768,-0.11 -2.64,-0.212 -3.565,-0.305 C 4.21,23.883 0.974,17.828 0.559,10.543 0.513,9.735 -0.058,9.92 -0.172,9.26 -0.516,7.268 0.917,4.376 1.6,2.32 2.196,0.527 2.221,-0.63 0,0"/></g></g></g><g id="g24"><g clip-path="url(#clipPath28)" id="g26"><g transform="translate(0.894,18.2954)" id="g32"><path id="path34" style="fill:#db7803;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 C 3.043,1.972 7.674,4.03 16.505,-0.814 24.908,-5.423 16.934,5.402 13.676,6.173 10.418,6.945 3.345,9.518 0.686,7.074 -1.973,4.63 0,0 0,0"/></g><g transform="translate(3.4663,8.1777)" id="g36"><path id="path38" style="fill:#db7803;fill-opacity:1;fill-rule:nonzero;stroke:none" d="M 0,0 C 1.543,1.458 3.293,3.902 8.91,2.573 15.428,1.029 11.661,0.643 9.088,1.071 6.516,1.501 2.958,0.729 0.643,-0.9 -1.672,-2.529 0,0 0,0"/></g><g transform="translate(27.0322,34.7153)" id="g40"><path id="path42" style="fill:#db7803;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c 1.028,-2.229 2.887,-6.174 1.386,-9.561 -1.502,-3.386 0.655,-1.155 1.457,0.215 1.028,1.758 0.168,6.632 -2.114,9.089 C -1.489,2.13 -0.055,0.117 0,0"/></g></g></g><g id="g44"><g clip-path="url(#clipPath48)" id="g46"><g transform="translate(2.0381,21.085)" id="g52"><path id="path54" style="fill:#ffac33;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 0,0 c -0.955,3.252 0.381,12.621 12.621,14.915 2.133,0 10.133,-1.272 6.526,-16.257 C 18.588,-3.667 17.351,-4.081 15.585,-2.947 11.46,-0.299 3.984,4.152 0,0"/></g></g></g></g></svg>
+            </i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
 </template>
 
 <script>
+import players from './assets/players.json'
+import events from './assets/events.json'
+
 export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      events,
+      players,
+      selectedPlayer: ""
+    }
+  },
+  computed: {
+    myEvents () {
+      return this.events.filter(e => e.player !== this.selectedPlayer)
+    },
+    bingoEvents () {
+      const myEventsCopy = this.myEvents.slice();
+      const bingoArray = []
+
+      for(let i=0; i < 25 ; i++) {
+        if (i !== 12 && myEventsCopy.length > 0) {
+          console.log('OK C PARTI')
+          const randomValue = Math.floor(Math.random() * myEventsCopy.length)
+          bingoArray.push(myEventsCopy[randomValue])
+          myEventsCopy.splice(randomValue, 1)
+        } else bingoArray.push({event: ''})
+      }
+      return bingoArray.map(e => e.event)
     }
   }
 }
 </script>
 
 <style lang="scss">
+ // @import "~font-awesome/css/font-awesome.css";
+ // @import "~bulma/sas";
 #app {
+  margin-left: 50px;
+  width: fit-content;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
 
-h1, h2 {
-  font-weight: normal;
+.player-selection {
+  position: relative;
+  left: 0px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+tbody tr {
+  height: 100px;
+  td {
+    width: 100px;
+    font-size: 12px;
+  }
 }
 </style>
