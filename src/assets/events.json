@@ -96,7 +96,7 @@
     "player": ""
   },
   {
-    "event": "Espace Client prend vient prendre sa pause après celle du plateau",
+    "event": "Espace Client vient prendre sa pause après celle du plateau",
     "player": ""
   },
   {
@@ -134,5 +134,9 @@
   {
     "event": "Deux personnes ne sont pas d'accord sur l'ouverture des fenêtres",
     "player": ""
+  },
+  {
+    "event": "Benjamin fait une blague lourde suivi de 'imagine le mec'",
+    "player": "Benjamin"
   }
  ]
