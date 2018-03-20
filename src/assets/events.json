@@ -138,5 +138,8 @@
   {
     "event": "Benjamin fait une blague lourde suivi de 'imagine le mec'",
     "player": "Benjamin"
+  },
+  {
+    "event": "Quelqu'un référence La cité de la peur OU la classe américaine"
   }
  ]
