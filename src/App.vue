@@ -4,16 +4,28 @@
 
   <div class="columns">
     <div class="column">
-      <h2 class="subtitle"> Règles</h2>
+      <h2 class="subtitle is-size-4 has-text-primary"> Règles</h2>
       <ul>
         <li>A chaque Round tout le monde regénère un Bingo vide</li>
         <li>Un nouveau Round commence chaque Lundi, on regénère son bingo même si il n'y a pas eu de gagnant au round précédent.</li>
         <li>Lorsqu'un des évènements de votre bingo se produit, cochez une case de votre bingo. Cet évènement doit être également coché par deux autres personnes pour être valide</li>
-        <li>La case du milieu est cadeau. Elle est comptée comme une case validée</li>
         <li>Une fois que vous avez 5 cases à la suite (ligne, colonne, diagonale) cochée, faites un screen et envoyez le dans le slac en mettant "BINGO"</li>
-        <li>Le premier à avoir un BINGO dans un round peut croissantiser quelqu'un SAUF ceux qui lui ont permis de remplir sa ligne gagnante, et gagne un croissant d'immunité pour le prochain round</li>
-        <li>La personne croissantisée gagne également un croissant d'immunité valable uniquement pour le prochain Round.</li>
       </ul>
+
+      <h2 class="subtitle is-size-4 has-text-primary">Gains</h2>
+      <h3 class="is-size-5 has-text-info">Premier</h3>
+      <p>Gagne le droit de croissantiser quelqu'un ET un Totem d'immunité</p>
+      <h3 class="is-size-5 has-text-info">Deuxième</h3>
+      <p>Gagne au choix:
+        <ul>
+          <li>Un totem d'immunité pour le round courant</li>
+          <li>Une case offerte au prochain round</li>
+        </ul>
+      </p>
+      <h3 class="is-size-5 has-text-info">Troisième</h3>
+      <p>Un café (ou chocolat) payé par le croissantisé</p>
+      <h3 class="is-size-5 has-text-info">Croissantisé</h3>
+      <p>Le devoir de ramener à manger pour la pause et de payer le café du troisième (s'il y en a un)</p>
     </div>
     <div class="column">
 
