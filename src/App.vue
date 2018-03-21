@@ -8,8 +8,8 @@
       <ul>
         <li>A chaque Round tout le monde regénère un Bingo vide</li>
         <li>Un nouveau Round commence chaque Lundi, on regénère son bingo même si il n'y a pas eu de gagnant au round précédent.</li>
-        <li>Lorsqu'un des évènements de votre bingo se produit, cochez une case de votre bingo. Cet évènement doit être également coché par deux autres personnes pour être valide</li>
-        <li>Une fois que vous avez 5 cases à la suite (ligne, colonne, diagonale) cochée, faites un screen et envoyez le dans le slac en mettant "BINGO"</li>
+        <li>Lorsque vous constatez <span class="has-text-danger">(PAS QUELQU'UN D'AUTRE QUI LE DIT SUR SLACK)</span> un évènement de votre bingo, cochez une case de votre bingo. Quelqu'un d'autre que la personne sur l'évènement doit le confirmer pour être valide.</li>
+        <li>Une fois que vous avez 5 cases à la suite (ligne, colonne, diagonale) cochée, faites un screen et envoyez le dans le slack en mettant "BINGO"</li>
       </ul>
 
       <h2 class="subtitle is-size-4 has-text-primary">Gains</h2>

@@ -58,7 +58,7 @@
     <g id="g44">
       <g clip-path="url(#clipPath48)" id="g46">
         <g transform="translate(2.0381,21.085)" id="g52">
-          <path id="path54" style="fill:#ffac33;fill-opacity:0.25;fill-rule:nonzero;stroke:none"
+          <path id="path54" style="fill:#ffac33;fill-opacity:0.5;fill-rule:nonzero;stroke:none"
             d="m 0,0 c -0.955,3.252 0.381,12.621 12.621,14.915 2.133,0 10.133,-1.272 6.526,-16.257 C 18.588,-3.667 17.351,-4.081 15.585,-2.947 11.46,-0.299 3.984,4.152 0,0"/>
         </g>
       </g>
