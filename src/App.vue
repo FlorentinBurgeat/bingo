@@ -42,7 +42,11 @@
                 </select>
               </div>
             </div>
-            <div class="control"><button class="button is-primary" @click="generatebingoEvents()">Générer</button></div>
+            <div class="control">
+              <button class="button is-primary"
+                :disabled="!selectedPlayer"
+                @click="generatebingoEvents()">Générer</button>
+              </div>
           </div>
         </div>
       </div>
@@ -98,7 +102,7 @@ export default {
   },
   computed: {
     myEvents () {
-      return this.events.filter(e => e.player !== this.selectedPlayer)
+      return this.events.filter(e => !e.player || e.player.indexOf(this.selectedPlayer) === -1)
     }
   },
   methods: {
@@ -120,8 +124,6 @@ export default {
 </script>
 
 <style lang="scss">
- // @import "~font-awesome/css/font-awesome.css";
- // @import "~bulma/sas";
 #app {
   margin-left: 50px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

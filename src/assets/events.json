@@ -1,149 +1,156 @@
 [
   {
     "event": "Jules annonce qu'il ne sera pas là un jour",
-    "player": "Jules"
+    "player": ["Jules"]
   },
   {
     "event": "Romain chantonne des chansons que personne ne connaît",
-    "player": "Romain B"
+    "player": ["Romain B"]
   },
   {
     "event": "Florentin veut éteindre la lumière",
-    "player": "Florentin"
+    "player": ["Florentin"]
   },
   {
     "event": "Sébastien ramène de la soupe au déjeuner",
-    "player": "Sébastien"
+    "player": ["Sébastien"]
   },
   {
     "event": "Pierre le commercial Solutec passe à Ocea",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Samuel pousse un cri bestial",
-    "player": "Samuel"
+    "player": ["Samuel"]
   },
   {
     "event": "Une équipe monopolise l'agent de build",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Mathieu vanne quelqu'un",
-    "player": "Mathieu"
+    "player": ["Mathieu"]
   },
   {
     "event": "Un dev Front troll le C#/Techno Microsoft",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Il ya des bruits de travaux",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Quelqu'un propose un afterwork avant vendredi",
-    "player": ""
+    "player": [""]
   },
   {
-    "event": "Lucie annonce un bug d'orthographe pendant une pause",
-    "player": "Lucie"
+    "event": "Lucie annonce seulement un bug d'orthographe",
+    "player": ["Lucie"]
   },
   {
     "event": "Tuong vi chante des chansons qui rentrent dans la tête",
-    "player": "Tuong vi"
+    "player": ["Tuong vi"]
   },
   {
     "event": "Aurélien M broie MA main en me saluant",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Florentin imite Denis Brogniart",
-    "player": "Florentin"
+    "player": ["Florentin"]
   },
   {
     "event": "Un objet est lancé à travers l'open space",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Romain propose d'aller en pause et personne ne le suit",
-    "player": "Romain B"
-  },
-  {
-    "event": "Mathieu annonce qu'il partira tôt et part tard",
-    "player": "Mathieu"
+    "player": ["Romain B"]
   },
   {
     "event": "Steven insulte la famille d'un outil de code",
-    "player": "Steven"
+    "player": ["Steven"]
   },
   {
     "event": "Quelqu'un demande où est l'accueil",
-    "player": ""
+    "player": [""]
   },
   {
-    "event": "Un dev back troll le JavaScript",
-    "player": ""
+    "event": "Un dev back troll le Front",
+    "player": [""]
   },
   {
-    "event": "Quelqu'un râle d'être 5ème sur l'agent de build",
-    "player": ""
+    "event": "Quelqu'un râle d'être 4ème sur l'agent de build",
+    "player": [""]
   },
   {
-    "event": "Jules ouvre la fenêtre et la referme juste après à cause de la fumée",
-    "player": "Jules"
+    "event": "Jules ferme la fenêtre à cause de la fumée",
+    "player": ["Jules"]
   },
   {
     "event": "Un canvas est ajouté/retiré d'un mur",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Espace Client vient prendre sa pause après celle du plateau",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Quelqu'un dit \"ISO\"",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Quelqu'un râle sur son IDE",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Houssem remet quelque chose en question",
-    "player": "Houssem"
+    "player": ["Houssem"]
   },
   {
     "event": "Quelqu'un râle après l'extinction des lumières",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "On entend rigoler Nicolas mais on ne le voit pas",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Quelqu'un dit \"Ce n'est pas dans le MVP\"",
-    "player": ""
+    "player": [""]
   },
   {
     "event": "Anouk parle de son keum",
-    "player": "Anouk"
+    "player": ["Anouk"]
   },
   {
     "event": "Sébastien \"est dans l'étang\"",
-    "player": "Sébastien"
+    "player": ["Sébastien"]
   },
   {
     "event": "Deux personnes ne sont pas d'accord sur l'ouverture des fenêtres",
-    "player": ""
+    "player": [""]
   },
   {
-    "event": "Benjamin fait une blague lourde suivi de 'imagine le mec'",
-    "player": "Benjamin"
+    "event": "Benjamin te demande d'imaginer",
+    "player": ["Benjamin"]
   },
   {
-    "event": "Quelqu'un référence La cité de la peur OU la classe américaine"
+    "event": "Quelqu'un référence 'La cité de la peur'"
+  },
+  {
+    "event": "Quelqu'un référence 'la classe américaine'"
+  },
+  {
+    "event": "Florentin référence 'Les deux minutes du peuple'",
+    "player": ["Florentin"]
   },
   {
     "event": "Romain B prône le F#",
-    "player": "Romain B"
+    "player": ["Romain B"]
+  },
+  {
+    "event": "Romain et Anouk rate leur check",
+    "player": ["Romain B", "Anouk"]
   }
  ]
